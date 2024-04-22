@@ -18,11 +18,19 @@ public class PasswordGenerator {
 		System.out.println("inserisci il tuo colore preferito");
 		String colore = input.nextLine();
 		
-		System.out.println("inserisci la tua data di nascita in numeri");
-		int data = input.nextInt();
+		System.out.println("inserisci il tuo giorno di nascita");
+		int giorno = input.nextInt();
+		
+		System.out.println("inserisci il tuo mese di nascita");
+		int mese = input.nextInt();
+		
+		System.out.println("inserisci il tuo anno di nascita");
+		int anno = input.nextInt();
+		
+		int data = (giorno + mese + anno); 
 		
 		System.out.println("La tua nuova passward è : " + "-" + nome 
-				+ "-" + cognome + "-" + colore + "-" + data);
+				+ "-" + cognome + "-" + colore + "-" + data );
 	}
 
 }
