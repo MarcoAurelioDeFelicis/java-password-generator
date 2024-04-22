@@ -7,29 +7,29 @@ public class PasswordGenerator {
 	
 	public static void main(String[] args) {
 		
-		Scanner input = new Scanner (System.in);
+		Scanner scan = new Scanner (System.in);
 		
 		System.out.println("inserisci il tuo nome");
-		String nome = input.nextLine();
+		String nome = scan.nextLine();
 		
 		System.out.println("inserisci il tuo cognome");
-		String cognome = input.nextLine();
+		String cognome = scan.nextLine();
 		
 		System.out.println("inserisci il tuo colore preferito");
-		String colore = input.nextLine();
+		String colore = scan.nextLine();
 		
 		System.out.println("inserisci il tuo giorno di nascita");
-		int giorno = input.nextInt();
+		int giorno = scan.nextInt();
 		
 		System.out.println("inserisci il tuo mese di nascita");
-		int mese = input.nextInt();
+		int mese = scan.nextInt();
 		
 		System.out.println("inserisci il tuo anno di nascita");
-		int anno = input.nextInt();
+		int anno = scan.nextInt();
 		
 		int data = (giorno + mese + anno); 
 		
-		System.out.println("La tua nuova passward è : " + "-" + nome 
+		System.out.println("La tua nuova passward è : " + nome 
 				+ "-" + cognome + "-" + colore + "-" + data );
 	}
 
